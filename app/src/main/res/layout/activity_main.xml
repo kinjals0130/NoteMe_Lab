@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?actionBarSize"
+        android:theme="?actionBarTheme"
+        android:background="@color/title">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/note_app"
+            android:textColor="@color/black"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/btn_newNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:backgroundTint="@color/black"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/add_note"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            app:cornerRadius="0dp"
+            android:onClick="addNewNote"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <SearchView
+        android:id="@+id/sv_searchNotes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#B3ABAB"
+        android:text="@color/black"
+        android:iconifiedByDefault="false"
+        android:queryHint="Search notes" />
+
+    <ListView
+        android:id="@+id/lv_notesList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="3dp"
+        android:dividerHeight="3dp"
+        android:divider="@color/darkGrey"/>
+
+</LinearLayout>

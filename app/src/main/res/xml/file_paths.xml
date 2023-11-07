@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<file_paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <external-path
+        name="my_images"
+        path="Android/data/com.example.noteme_lab/files/Pictures" />
+    <!--    <external-path-->
+    <!--        name="external"-->
+    <!--        path="." />-->
+    <!--    <external-files-path-->
+    <!--        name="external_files"-->
+    <!--        path="." />-->
+</file_paths>

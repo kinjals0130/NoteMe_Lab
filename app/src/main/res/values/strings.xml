@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">NoteMe_Lab</string>
+    <string name="new_note">New Note</string>
+    <string name="description">Description</string>
+    <string name="title">Title</string>
+    <string name="choose_the_colour_of_your_note">Choose the colour of your note</string>
+    <string name="white">white</string>
+    <string name="orange">Orange</string>
+    <string name="green">Green</string>
+    <string name="blue">Blue</string>
+    <string name="title_cell">Title</string>
+    <string name="cell_description">Description</string>
+    <string name="colour_cell">Colour</string>
+    <string name="add_note">+ Note</string>
+    <string name="note_app">Note App</string>
+    <string name="take_a_photo">Take a Photo</string>
+    <string name="attach_an_image">Attach an Image</string>
+    <string name="save_note">Save Note</string>
+</resources>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_Note"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NewNoteActivity"
+    android:padding="10dp">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/title"
+        android:minHeight="?actionBarSize"
+        android:theme="?actionBarTheme">
+
+        <TextView
+            android:id="@+id/tv_newNoteTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/new_note"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <EditText
+        android:id="@+id/et_Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:layout_marginTop="10dp"
+        android:textSize="22sp"
+        android:hint="@string/title"
+        android:inputType="text"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/et_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:layout_marginTop="10dp"
+        android:textSize="22sp"
+        android:hint="@string/description"
+        android:inputType="text"
+        android:autofillHints="" />
+
+
+    <TextView
+        android:id="@+id/tv_chooseCol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:text="@string/choose_the_colour_of_your_note"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/et_colour"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:inputType="text"
+        android:text="@string/white"
+        android:visibility="invisible"
+        android:autofillHints="" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_colours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_gravity="center" >
+
+        <Button
+            android:id="@+id/btn_Orange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/note_orange"
+            android:text="@string/orange"
+            android:textColor="@color/black"
+            app:cornerRadius="0dp"
+            app:strokeWidth="1dp" />
+
+        <Button
+            android:id="@+id/btn_Blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/note_blue"
+            android:text="@string/blue"
+            android:textColor="@color/black"
+            app:cornerRadius="0dp"
+            app:strokeWidth="1dp" />
+
+        <Button
+            android:id="@+id/btn_Green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/note_green"
+            android:text="@string/green"
+            android:textColor="@color/black"
+            app:cornerRadius="0dp"
+            app:strokeWidth="1dp" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_Image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/darkGrey"
+        android:text="@string/attach_an_image"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btn_Camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/darkGrey"
+        android:text="@string/take_a_photo"
+        android:textColor="@color/white" />
+
+    <ImageView
+        android:id="@+id/img_note"
+        android:layout_width="match_parent"
+        android:layout_height="150dp" />
+
+    <Button
+        android:id="@+id/btn_Save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#4BA618"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="@string/save_note"
+        android:textSize="18sp"
+        android:onClick="saveNotePressed" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center" >
+
+
+        <Button
+            android:id="@+id/btn_Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="#D12A2A"
+            android:text="Back"
+            android:textSize="18sp"
+            android:onClick="backPressed"/>
+
+        <Button
+            android:id="@+id/btn_Delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#555454"
+            android:text="Delete Note"
+            android:textSize="16sp"
+            android:onClick="deleteNotePressed"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>
