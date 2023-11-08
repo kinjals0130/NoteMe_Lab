@@ -191,8 +191,7 @@ public class NewNoteActivity extends AppCompatActivity {
 
     //this method is invoked on clicking the back button
     public void backPressed(View view){
-        Intent backIntent = new Intent(this, MainActivity.class);
-        startActivity(backIntent);
+        getOnBackPressedDispatcher().onBackPressed();
     }
 
     //method invoked when delete button clicked
